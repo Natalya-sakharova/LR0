@@ -1,2 +1,83 @@
+Программа 1
+
 print(«Наталья»)
 print(«natalia.sak2317@gmail.com»)
+
+Программа 2
+
+name = input("Введите имя: ")
+print("Здравствуйте,", name)
+
+Программа 3
+
+d = float(input("Какова длина? "))
+s =  float(input("Какова ширина? "))
+print("Площадь = ", d*s)
+
+Программа 5
+
+q1 = int(input("Сколько бутылок по 1л? "))
+q2 =  int(input("Сколько бутылок больше 1л? "))
+print("Выручка: ", "%.2f" % (q1*0.10+q2*0.25) , "$")
+
+Программа 6
+
+summa = int(input("Какая сумма заказа? "))
+tips =  summa * 0.18
+nalog = summa*0.13
+print("Чаевые: ", tips , "$")
+print("Налог: ", nalog , "$")
+print("Итог: ", nalog+tips+summa , "$")
+
+Программа 7
+
+n = int(input("До какого числа считать? "))
+for i in range(1, n):
+ summa = i*(i+1)/2
+print("Сумма: ", summa)
+
+Программа 8
+
+b = int(input("Сколько безделушек?"))
+s = int(input("Сколько сувениров?"))
+print("Общий вес = ", b*112+s*75)
+
+Программа 9
+b = int(input("Каков начальный депозит?"))
+summa = b
+for i in range(1, 4):
+ summa = summa*1.004
+ print("Сумма за",i,"год: ", "%.2f" % summa)
+
+Программа 10
+
+import math
+a = int(input("Введите число a: "))
+b = int(input("Введите число b: "))
+print("сумма a и b: ", a + b)
+print("разница между a и b: ", a - b)
+print("произведение a и b: ",a * b )
+print("частное от деления a на b: ", a/b)
+print("остаток от деления a на b: ", a % b)
+print("десятичный логарифм числа a: ", math.log10(a))
+print("результат возведения числа a в степень b: ", a**b)
+
+Программа 11
+
+import math
+r = int(input("Введите радиуc: "))
+print("Площадь круга: ", math.pi * r * r)
+print("Объём шара: ", math.pi * r * r * r / 3)
+
+Программа 12
+import math
+r = int(input("Введите радиуc цилиндра: "))
+h = int(input("Введите высоту цилиндра: "))
+print("Объём цилиндра: ", math.pi * r * r * h)
+
+Программа 13
+import math
+h = int(input("Введите высоту: "))
+g = 9.8
+print("Скорость: ", math.sqrt(2*g*h))
+
